@@ -9,9 +9,9 @@
     :has_infection :inf_229 ;
     :has_CVE :CVE-2019-2178 .
 :CVE-2019-2178 a :CVE ;
-    :Discription "something" .
+    :Description "something" .
 :CWE-502 a :CWE ;
-    :impact "impact1" .
+    :has_impact "impact1" .
 :inf_229 a :infection ;
     :infected_version  "All versions" ;
     :has_mitigation  "simens recommendation" ;
