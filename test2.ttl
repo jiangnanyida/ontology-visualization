@@ -86,3 +86,83 @@
     :name "Insecure Password Storage CWE-326" ;
     :intrusion "User management information including passwords is stored in a reversible format in file “Ps_security.ini” by the affected software. An attacker with read permissions to this local file can obtain the passwords, log in as a privileged user, and potentially affect the availability, integrity, and confidentiality of the system." ;
     :has_CVE :CVE-2012-4693 .
+:vul_21 a :vulnerability ;
+    :name "Improper Access Control CWE-284" ;
+    :intrusion "The CP 1604 and CP 1616 interface cards are used for connecting desktop workstations and PCI-104 systems to PROFINET IO. The firmware’s debugging interface is enabled by default, giving remote access to the debugging ports. By sending a specially crafted packet to Port 17185/UDP, an attacker could cause a DoS or execute arbitrary code." ;
+    :has_CVE :CVE-2013-0659 .
+:vul_22 a :vulnerability ;
+    :name "Improper Input Validation" ;
+    :intrusion "The vulnerability could allow remote attackers to execute arbitrary code via a specially crafted HTML document. The attacker would require an end-user or operator to voluntarily interact with the attack mechanism for it to be successful. For example, the attacker could send an email message to the end-user, containing a link to a Web site with the specially crafted HTML document." ;
+    :has_CVE :CVE-2013-0108 .
+:vul_23 a :vulnerability ;
+    :name "IMPROPER INPUT VALIDATION CWE-20" ;
+    :intrusion "The SSL/TLS secured web interface of the affected products is vulnerable to the BEAST attack. As it uses SSL libraries, which are not compatible with 1/n-1 record splitting, some newer browser versions are not able to connect to the web interface." ;
+    :has_CVE :CVE-2011-3389 .
+:vul_24 a :vulnerability ;
+    :name "DOWNLOAD OF CODE WITHOUT INTEGRITY CHECK CWE-494" ;
+    :intrusion "The traffic sensors accept software modifications without sufficiently checking the integrity of the new code, leaving the devices vulnerable to modification and damage." ;
+    :has_CVE :CVE-2014-2378 .
+:vul_25 a :vulnerability ;
+    :name "MISSING ENCRYPTION OF SENSITIVE DATA CWE-311" ;
+    :intrusion "Unencrypted wireless traffic between a traffic sensor and an access point could be intercepted and replayed to influence traffic data, which could have a limited impact on traffic control for an intersection." ;
+    :has_CVE :CVE-2014-2379 .
+:vul_26 a :vulnerability ;
+    :name "PROCESS CONTROL CWE-114" ;
+    :intrusion "The affected DLL is linked with OpenSSL to support HTTPS communications. The OpenSSL library was unintentionally built with hardware-support, resulting in unintended cryptographic-related DLLs being called at runtime. The unintentional DLL calls may enable an attacker to execute arbitrary code at runtime after convincing a victim to install a malicious DLL called by the application." ;
+    :has_CVE :CVE-2015-0978 .
+:vul_27 a :vulnerability ;
+    :name "STACK-BASED BUFFER OVERFLOW CWE-121" ;
+    :intrusion "The affected product contains a vulnerable function susceptible to a buffer overflow condition that could allow remote code execution." ;
+    :has_CVE :CVE-2015-1000 .
+:vul_28 a :vulnerability ;
+    :name "IMPROPER INPUT VALIDATION CWE-20" ;
+    :intrusion "The researchers found that by sending a specially crafted packet simulating an RTU to Master message exceeding allowable data length, an attacker can cause the Telegyr 8979 Master to crash. SUBNET has also discovered that after sending a specially crafted message containing a valid data length, any subsequent message sent immediately to the Telegyr 8979 will also crash the service. SUBNET had also determined the root issue was in the GPT software library." ;
+    :has_CVE :CVE-2014-2357 .
+:vul_29 a :vulnerability ;
+    :name "IMPROPER CHECK FOR UNUSUAL OR EXCEPTIONAL CONDITIONS CWE-754" ;
+    :intrusion "An unhandled C++ exception occurs upon receiving a specifically formatted message. The DNP3 process within Windows service crashes, and the service cannot be stopped via services dialog. Restoration of service requires a system reboot." ;
+    :has_CVE :CVE-2014-5426 .
+:vul_30 a :vulnerability ;
+    :name "STACK-BASED BUFFER OVERFLOW CWE-121:" ;
+    :intrusion "The Modbus Serial Driver creates a listener on Port 27700/TCP. When a connection is made, the Modbus Application Header is first read into a buffer. If a large buffer size is specified in this header, a stack-based buffer overflow results." ;
+    :has_CVE :CVE-2013-0662 .
+:vul_31 a :vulnerability ;
+    :name "IMPROPER AUTHENTICATION CWE-287" ;
+    :intrusion "The device’s web server could allow unauthenticated attackers to impersonate legitimate users of the web interface (Port 80/TCP and Port 443/TCP) if an active web session of an authenticated user exists at the time of attack." ;
+    :has_CVE :CVE-2015-1049 .
+:vul_32 a :vulnerability ;
+    :name "DENIAL OF SERVICE CWE-730" ;
+    :intrusion "The web server of the affected switches could allow unauthenticated users to cause a device to reboot if malformed HTTP requests are sent to the web server (Port 80/TCP or Port 443/TCP). To achieve this, an attacker must be able to reach the HTTP interface over the network. No packets are forwarded to connected devices until the reboot is completed." ;
+    :has_CVE :CVE-2014-8478 .
+:vul_33 a :vulnerability ;
+    :name "DENIAL OF SERVICE CWE-730" ;
+    :intrusion "The FTP server of the affected switches could allow authenticated users to cause a device reboot if specially crafted network packets are sent to the FTP server (Port 21/TCP). No packets are forwarded to connected devices until the reboot is completed." ;
+    :has_CVE :CVE-2014-8479 .
+:vul_34 a :vulnerability ;
+    :name "PLAIN TEXT STORAGE OF A PASSWORD CWE-256" ;
+    :intrusion "An attacker is able to view saved passwords from the DNS and mail configuration by viewing the mail configuration page source." ;
+    :has_CVE :CVE-2015-3949 .
+:vul_35 a :vulnerability ;
+    :name "UNINTENDED PROXY OR INTERMEDIARY CWE-441" ;
+    :intrusion "The ROS operating system for layer 2 switches include IP forwarding capabilities that cannot be deactivated by users. This may allow an attacker in one VLAN to possibly circumvent VLAN isolation and communicate with devices in another VLAN if IP addresses are configured on both VLANs." ;
+    :has_CVE :CVE-2015-6675 .
+:vul_36 a :vulnerability ;
+    :name "REMOTE FILE INCLUSION CWE-98" ;
+    :intrusion "Files can be accessed and downloaded without authentication." ;
+    :has_CVE :CVE-2015-7935 .
+:vul_37 a :vulnerability ;
+    :name "CROSS-SITE REQUEST FORGERY CWE-352" ;
+    :intrusion "A request can be used to update the password because of no tokens." ;
+    :has_CVE :CVE-2015-7936 .
+:vul_38 a :vulnerability ;
+    :name "CLEARTEXT TRANSMISSION OF SENSITIVE INFORMATION CWE-319" ;
+    :intrusion "The password is transmitted in clear text to unlock the PLC for modification, which leaves the password vulnerable to packet sniffing." ;
+    :has_CVE :CVE-2015-0987 .
+:vul_39 a :vulnerability ;
+    :name "STORING PASSWORDS IN A RECOVERABLE FORMAT CWE-257" ;
+    :intrusion "Passwords are stored in source code protected project files for CX-Programmer in a recoverable format." ;
+    :has_CVE :CVE-2015-0988 .
+:vul_40 a :vulnerability ;
+    :name "STORING PASSWORDS IN A RECOVERABLE FORMAT CWE-257" ;
+    :intrusion "Passwords are locally stored in an object file that is saved in a Compact Flash Card in a recoverable format." ;
+    :has_CVE :CVE-2015-1015 .
