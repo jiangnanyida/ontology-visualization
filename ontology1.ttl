@@ -3,6 +3,7 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+##DatatypeProperty
 :vulnerability a owl:Class .
 :name a owl:DatatypeProperty .
 :hasSpouse a owl:ObjectProperty .
@@ -12,3 +13,4 @@
 :has_time_span a owl:ObjectProperty .
 :has_CWE_name a owl:ObjectProperty .
 
+##something
