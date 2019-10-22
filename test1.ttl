@@ -6,10 +6,10 @@
 :vul_124  a :vulnerability ;
     :name "DESERIALIZATION OF UNTRUSTED DATA" ;
     :has_CWE :CWE-502 ;
-    :has_infection :inf_229 .
+    :has_infection :inf_229 ;
     :has_CVE :CVE-2019-2178 .
 :CVE-2019-2178 a :CVE ;
-    :has_Discription "something" .
+    :Discription "something" .
 :CWE-502 a :CWE ;
     :impact "impact1" .
 :inf_229 a :infection ;
