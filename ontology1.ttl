@@ -13,7 +13,7 @@
 :name a owl:DatatypeProperty .
 :vendor a owl:DatatypeProperty .
 :type a owl:DatatypeProperty .
-
+:Description a owl:DatatypeProperty .
 
 :has_CWE a owl:ObjectProperty .
 :has_CVE a owl:ObjectProperty .
@@ -21,7 +21,7 @@
 
 :has_impact a owl:ObjectProperty .
 
-:has_Description a owl:ObjectProperty .
+
 
 :has_mitigation a owl:ObjectProperty .
 :infected_version a owl:ObjectProperty .
