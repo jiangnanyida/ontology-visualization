@@ -14,6 +14,6 @@
     :has_mitigation  "simens recommendation" ;
     :infected_device :dev_112 .
 :dev_112 a :device ;
-    :name "LOGO!"
+    :name "LOGO!" ;
     :has_vendor  "Simens" ;
     :has_type  "engineering software" .
