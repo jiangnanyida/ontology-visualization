@@ -3,16 +3,16 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:vul_124  a:vulnerability ;
+:vul_124  a :vulnerability ;
     :has_name "DESERIALIZATION OF UNTRUSTED DATA" ;
     :has_CWE_name :CWE-502 ;
-    :has_infection : inf_229 .
+    :has_infection :inf_229 .
 :CWE-502 a :CWE ;
     :has_impact "impact1" .
 :inf_229 a :infection ;
-    :infected_version : "All versions" ;
-    :has_mitigation : "simens recommendation" ;
-    :infected_device :"LOGO! Soft Comfort" .
-:"LOGO! Soft Comfort" a: device .
-    :has_vendor : "Simens" ;
-    :has_type : "engineering software" .
+    :infected_version  "All versions" ;
+    :has_mitigation  "simens recommendation" ;
+    :infected_device :LOGO .
+:LOGO a :device ;
+    :has_vendor  "Simens" ;
+    :has_type  "engineering software" .
