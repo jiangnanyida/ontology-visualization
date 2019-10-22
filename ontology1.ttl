@@ -21,6 +21,8 @@
 
 :has_impact a owl:ObjectProperty .
 
+:has_Description a owl:ObjectProperty .
+
 :has_mitigation a owl:ObjectProperty .
 :infected_version a owl:ObjectProperty .
 :infected_device a owl:ObjectProperty .
