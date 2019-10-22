@@ -1,0 +1,11 @@
+@prefix : <http://dig.isi.edu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:vul_0 a :vulnerability ;
+    :name "DIRECTORY TRAVERSAL CWE-22" ;
+    :has_CVE :CVE-2012-4027 .
+:vul_1 a :vulnerability ;
+    :name "WEAK CREDENTIAL STORAGE CWE-522" ;
+    :has_CVE :CVE-2012-4028 .
