@@ -5,7 +5,10 @@
 
 :vul_0 a :vulnerability ;
     :name "DIRECTORY TRAVERSAL CWE-22" ;
+    :intrusion "By default, the Tridium Niagara AX software is not configured to deny access to restricted parent directories. This vulnerability allows a successful attacker to access the file that stores all system usernames and passwords. An attacker could exploit this vulnerability by sending a specially crafted request to the Web server running on Port 80/TCP." ;
     :has_CVE :CVE-2012-4027 .
 :vul_1 a :vulnerability ;
     :name "WEAK CREDENTIAL STORAGE CWE-522" ;
+    :intrusion "The system insecurely stores user authentication credentials, which are susceptible to interception and retrieval. User authentication credentials are stored in the Niagara station configuration file, config.bog, which is located in the root of the station folder." ;
+    :has_CVE :CVE-2012-4028 . CREDENTIAL STORAGE CWE-522" ;
     :has_CVE :CVE-2012-4028 .
