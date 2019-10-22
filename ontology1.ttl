@@ -3,14 +3,28 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-##DatatypeProperty
+
 :vulnerability a owl:Class .
+:infection a owl:Class .
+:cve a owl:Class .
+:cwe a owl:Class .
+
+
 :name a owl:DatatypeProperty .
-:hasSpouse a owl:ObjectProperty .
-:hasParent a owl:ObjectProperty .
-:Activity a owl:Class .
-:title a owl:DatatypeProperty .
-:has_time_span a owl:ObjectProperty .
-:has_CWE_name a owl:ObjectProperty .
+:vendor a owl:DatatypeProperty .
+:type a owl:DatatypeProperty .
+
+
+:has_CWE a owl:ObjectProperty .
+:has_CVE a owl:ObjectProperty .
+:has_infection a owl:ObjectProperty .
+
+:has_impact a owl:ObjectProperty .
+
+:has_mitigation a owl:ObjectProperty .
+:infected_version a owl:ObjectProperty .
+:infected_device a owl:ObjectProperty .
+
+
 
 ##something
