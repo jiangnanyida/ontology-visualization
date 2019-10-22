@@ -12,7 +12,7 @@
 :inf_229 a :infection ;
     :infected_version : "All versions" ;
     :has_mitigation : "simens recommendation" ;
-    :infected_device :LOGO! Soft Comfort .
-:LOGO! Soft Comfort a: device .
+    :infected_device :"LOGO! Soft Comfort" .
+:"LOGO! Soft Comfort" a: device .
     :has_vendor : "Simens" ;
     :has_type : "engineering software" .
