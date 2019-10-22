@@ -8,7 +8,7 @@
     :has_CWE_name :CWE-502 ;
     :has_infection : inf_229 .
 :CWE-502 a :CWE ;
-    :has_impact "impact1" ;
+    :has_impact "impact1" .
 :inf_229 a :infection ;
     :infected_version : "All versions" ;
     :has_mitigation : "simens recommendation" ;
