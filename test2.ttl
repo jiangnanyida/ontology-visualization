@@ -2,7 +2,6 @@
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
 :vul_0 a :vulnerability ;
     :name "DIRECTORY TRAVERSAL CWE-22" ;
     :intrusion "By default, the Tridium Niagara AX software is not configured to deny access to restricted parent directories. This vulnerability allows a successful attacker to access the file that stores all system usernames and passwords. An attacker could exploit this vulnerability by sending a specially crafted request to the Web server running on Port 80/TCP." ;
@@ -11,3 +10,19 @@
     :name "WEAK CREDENTIAL STORAGE CWE-522" ;
     :intrusion "The system insecurely stores user authentication credentials, which are susceptible to interception and retrieval. User authentication credentials are stored in the Niagara station configuration file, config.bog, which is located in the root of the station folder." ;
     :has_CVE :CVE-2012-4028 .
+:vul_2 a :vulnerability ;
+    :name "PLAINTEXT STORAGE IN A COOKIE CWE-315" ;
+    :intrusion "Usernames and passwords are stored using Base64 encoding in a cookie within the default authentication configuration. This significantly lowers the difficulty of exploitation by an attacker. The user must take additional steps to configure stronger authentication." ;
+    :has_CVE :CVE-2012-3025 .
+:vul_3 a :vulnerability ;
+    :name "PREDICTABLE SESSION IDS CWE-330" ;
+    :intrusion "The software generates a predictable session ID or key value, allowing an attacker to guess the session ID or key." ;
+    :has_CVE :CVE-2012-3024 .
+:vul_4 a :vulnerability ;
+    :name "Denial of Service" ;
+    :intrusion "When the Ethernet port on a SIMATIC S7-400 V6 receives a malformed IP packet, the device could go into the defect mode. The SIMATIC S7-400 V6 CPU defect mode locks out the unit so that it is not available for process control. An attacker could use this vulnerability to perform a DoS attack." ;
+    :has_CVE :CVE-2012-3016 .
+:vul_5 a :vulnerability ;
+    :name "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') CWE-79" ;
+    :intrusion "The web application Sentinel HASP Admin Control Center, which is accessed remotely, does not sufficiently validate user input. This characteristic can allow attackers to craft and inject HTML code into the configuration file." ;
+    :has_CVE :CVE-2011-3339 .
