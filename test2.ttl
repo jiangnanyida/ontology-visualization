@@ -10,5 +10,4 @@
 :vul_1 a :vulnerability ;
     :name "WEAK CREDENTIAL STORAGE CWE-522" ;
     :intrusion "The system insecurely stores user authentication credentials, which are susceptible to interception and retrieval. User authentication credentials are stored in the Niagara station configuration file, config.bog, which is located in the root of the station folder." ;
-    :has_CVE :CVE-2012-4028 . CREDENTIAL STORAGE CWE-522" ;
     :has_CVE :CVE-2012-4028 .
