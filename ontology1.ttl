@@ -3,12 +3,12 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:Person a owl:Class .
-:Man owl:subClassOf :Person .
-:Woman owl:subClassOf :Person .
+:vulnerability a owl:Class .
 :name a owl:DatatypeProperty .
 :hasSpouse a owl:ObjectProperty .
 :hasParent a owl:ObjectProperty .
 :Activity a owl:Class .
 :title a owl:DatatypeProperty .
 :has_time_span a owl:ObjectProperty .
+:has_CWE_name a owl:ObjectProperty .
+

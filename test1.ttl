@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 :vul_124  a :vulnerability ;
-    :has_name "DESERIALIZATION OF UNTRUSTED DATA" ;
+    :name "DESERIALIZATION OF UNTRUSTED DATA" ;
     :has_CWE_name :CWE-502 ;
     :has_infection :inf_229 .
 :CWE-502 a :CWE ;
@@ -12,7 +12,8 @@
 :inf_229 a :infection ;
     :infected_version  "All versions" ;
     :has_mitigation  "simens recommendation" ;
-    :infected_device :LOGO .
-:LOGO a :device ;
+    :infected_device :dev_112 .
+:dev_112 a :device ;
+    :name "LOGO!"
     :has_vendor  "Simens" ;
     :has_type  "engineering software" .
